@@ -1,0 +1,158 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #dab84b;
+    height: 42px;
+    padding: 16px 0 16px 0;
+    box-sizing: content-box;
+    z-index: 100;
+
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+}
+
+.burger_icon {
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 41px;
+}
+.header_logo {
+    width: 172px;
+    height: 30px;
+    img{
+        width: 100%;
+    }
+}
+.logo_button{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header_button{
+  width: 168px;
+  height: 40px;
+  padding: 8px 48px;
+  border-radius: 4px;
+  background-color: #4d4a4a;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  @media (max-width:500px) {
+    display: none;
+  }
+}
+
+.menu_nav{
+    position: absolute;
+    background-color:#fff;
+    height: 100vh;
+    top: 74px;
+    left: 0;
+    width:250px ;
+    z-index: 99;
+    left: -1000px;
+    transition: 0.7s;
+    box-shadow:5px 5px 5px 2px rgb(0, 0, 0, 0.5) ;
+}
+
+.active{
+    left: 0;
+    transition: 0.7s;
+}
+.menu_nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.menu_icon-close {
+    border:none;
+    width: 45px;
+    height: 45px;
+    background-color:transparent;
+    position: relative;
+    top: 15px;
+
+    cursor: pointer;
+    img{
+        width: 100%;
+    }
+}
+.menu_list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.menu_item {
+    margin-bottom: 20px;
+   
+}
+.menu_link {
+    font-size: 16px;
+    color:#222;
+    text-decoration: none;
+    font-weight: 500;
+}
+.legal_menu {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    a{
+        text-decoration: none;
+        color:#222;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+}
+.legal {
+    color:#222;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.get_links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    a{
+        width: 146px;
+        height: 44px;
+        margin-bottom: 15px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+a:hover{
+    text-decoration: underline;
+
+}
+
+.lock{
+   overflow:hidden;
+}
+
+.header_button {
+    text-decoration: none!important;
+    :hover{
+        text-decoration: none !important;
+       
+    }
+}
+.header_button:hover{
+    background-color: #3a3838;
+    transition: ease 1s;
+}
